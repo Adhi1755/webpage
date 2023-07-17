@@ -1,0 +1,86 @@
+*{
+    
+    color: #929395;
+}
+#body {
+    background-image: url(streetbg.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+}
+#headtag {
+    height: 50px;
+    width: 1520px;
+    text-align: left;
+    text-transform: capitalize;
+    font-size:xx-large;
+    background-color:#313234;
+    border-bottom:#17181A solid ;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0; 
+}
+.box {
+    background-color:#313234;
+     display: inline-block;
+    border-radius: 10px;
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .box:hover {
+    animation-name: rotate;
+    animation-duration: 1s;
+  }
+  button {
+    background-color: #313234;
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-style: dashed;
+    position:static;
+    top: 20px;
+    
+  }
+  button:hover {
+    animation-name: bounce;
+    animation-duration: .7s;
+  }
+  @keyframes bounce {
+    0% ,20%, 50% ,80% ,100% {
+      transform: translateY(0) ;
+    }
+    40% {
+      transform: translateY(-30px) ;
+    }
+    60% {
+      transform:translateY(-30px);
+    }
+
+    
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(760deg);
+    }
+  }
+  select {
+    background-color: #313234;
+    height: 50px;
+    width: 100px;
+    border-color: #313234;
+    border-style: hidden;
+    box-shadow: #313234;
+    
+    outline:none ;
+    
+  }
+  select:focus{
+    background-color: #17181A;
+  }
